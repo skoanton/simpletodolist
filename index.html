@@ -5,24 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     
-    <header>
+    <header class="flex-container">
         <img src="To-Do-Logo 1.svg" alt="">
     </header>
 
 
     <main>
-        <article>
-            <button class ="menuButton">Personal</button>
-            <button class="menuButton">Professional</button>
+        <article class="flex-container">
+            <button class ="menuButton active-button"  isActive="true">Personal</button>
+            <button class="menuButton" isActive="false">Professional</button>
         </article>
 
-        <article class="addBox">
-            <input type="text" placeholder="What do you need to do?">
-            <input class="addButton" type="button" value="add">
+        <article class="add-box flex-container">
+            <input class="add-input" type="text" placeholder="What do you need to do?">
+            <button class="add-button">ADD</button>
         </article>
 
         <article class="todo-list-box">
